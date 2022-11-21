@@ -2,11 +2,9 @@ from flask_restx import Resource, Namespace
 from flask import request, abort
 
 import utils
-from dao.model.user import User
-from setup_db import db
 from implemented import user_service
 from implemented import auth_service
-from utils import get_hash
+
 
 auth_ns = Namespace('auth')
 
